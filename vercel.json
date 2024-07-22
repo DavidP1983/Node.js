@@ -1,1 +1,5 @@
-{ "version": 2, "rewrites": [{ "source": "/(.*)", "destination": "/serverWithExpress.js" }] }
+{ 
+    "version": 2, 
+    "builds": [{ "src": "./serverWithExpress.js", "use": "@vercel/node"}], 
+    "routes": [{ "src":"/(.*)", "dest": "/serverWithExpress.js" }] 
+}
