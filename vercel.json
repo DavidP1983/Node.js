@@ -1,7 +1,6 @@
-{ 
+{  "version": 2,
     "builds": [
-        { "src": "./serverWithExpress.js", "use": "@vercel/node"}, 
-        { "src": "./style/main.css", "use": "@vercel/static"}
+        { "src": "./serverWithExpress.js", "use": "@vercel/node"} 
     ], 
-    "routes": [{ "src":"/(.*)", "dest": "/serverWithExpress.js" }] 
+    "routes": [{ "src":"/(.*)", "dest": "/" }] 
 }
