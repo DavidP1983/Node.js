@@ -38,7 +38,7 @@ app.listen(process.env.PORT, (error) => {
 // Middleware
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms')); //расширенная инфо в терминале
 app.use(express.urlencoded({ extended: false })); //для парсинга входящего запроса
-app.use(express.static(__dirname + 'style')); // для получения браузером доступа в стилям
+app.use(express.static(__dirname + "/style/")); // для получения браузером доступа в стилям
 app.use(methodOverride('_method')); // для правильной отработки метода PUT
 
 
