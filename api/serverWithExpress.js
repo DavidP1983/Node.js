@@ -1,14 +1,14 @@
 const express = require('express');
-const createPath = require('./helpers/create-path');
+const createPath = require('../helpers/create-path');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 
 // Импорт файла с Rout-ми
-const postRoutes = require('./routes/post-route');
-const contactsRoutes = require('./routes/contacts-route');
+const postRoutes = require('../routes/post-route');
+const contactsRoutes = require('../routes/contacts-route');
 // Импорт Api
-const postApiRoutes = require('./routes/api-post-route');
+const postApiRoutes = require('../routes/api-post-route');
 
 const chalk = require('chalk');
 require('dotenv').config();
@@ -38,7 +38,7 @@ app.listen(process.env.PORT, (error) => {
 // Middleware
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms')); //расширенная инфо в терминале
 app.use(express.urlencoded({ extended: false })); //для парсинга входящего запроса
-app.use(express.static(__dirname + "/style/")); // для получения браузером доступа в стилям
+app.use(express.static("style")); // для получения браузером доступа в стилям
 app.use(methodOverride('_method')); // для правильной отработки метода PUT
 
 

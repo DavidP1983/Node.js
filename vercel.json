@@ -2,5 +2,5 @@
     "builds": [
         { "src": "serverWithExpress.js", "use": "@vercel/node"} 
     ], 
-    "routes": [{ "src": "/((?!.*\\.\\w+$).*)", "dest": "/serverWithExpress.js" }] 
+    "routes": [{ "src": "/(.*)", "dest": "/serverWithExpress.js" }] 
 }
