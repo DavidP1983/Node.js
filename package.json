@@ -2,11 +2,11 @@
   "name": "node.js",
   "version": "1.0.0",
   "description": "",
-  "main": "api/serverWithExpress.js",
+  "main": "api/index.js",
   "scripts": {
-    "dev": "nodemon api/serverWithExpress.js",
+    "dev": "nodemon api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node api/serverWithExpress.js"
+    "start": "node api/index.js"
   },
   "author": "",
   "license": "ISC",
