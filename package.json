@@ -1,11 +1,9 @@
 {
-  "name": "node.js_practice",
+  "name": "node.js",
   "version": "1.0.0",
   "description": "",
   "main": "serverWithExpress.js",
-  "directories": {
-    "doc": "docs"
-  },
+  
   "scripts": {
     "dev": "nodemon serverWithExpress.js",
     "test": "echo \"Error: no test specified\" && exit 1",
